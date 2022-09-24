@@ -1,0 +1,14 @@
+.album {
+    border: 2px solid #000;
+    padding: 20px;
+    margin: 2px;
+    cursor: pointer;
+    display:inline-block;
+    width: 48%;
+    height: 100px;
+    text-decoration: none;
+    color: #000;
+}
+.album:hover {
+    background-color: #EEE;
+}

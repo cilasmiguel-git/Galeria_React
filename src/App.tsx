@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
-function App() {
+//Routes
+import { MainRoutes } from "./routes/mainRoutes";
+/*
+APIs:
+http://jsonplaceholder.typicode.com/albums
+http://jsonplaceholder.typicode.com/albums/1
+http://jsonplaceholder.typicode.com/albums/1/photos
+http://jsonplaceholder.typicode.com/photos/1
+*/
+function App() { 
   return (
-    <div className="App">
+    <div>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Galeria de fotos</h1>
       </header>
+      <hr />
+      <div>
+        <MainRoutes></MainRoutes>
+      </div>
+      <hr />
+      <footer className="App-footer">
+        todos os direitos reservados.
+      </footer>
     </div>
   );
 }
